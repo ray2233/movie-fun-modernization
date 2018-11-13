@@ -1,6 +1,7 @@
 package org.superbiz.moviefun;
 
 import org.junit.Test;
+import org.superbiz.cloudfoundry.ServiceCredentials;
 
 import static org.hamcrest.core.IsEqual.equalTo;
 import static org.junit.Assert.*;
@@ -22,9 +23,9 @@ public class ServiceCredentialsTest {
                                   "     \"uri\": \"mysql://someuri\",\n" +
                                   "     \"username\": \"username\"\n" +
                                   "    },\n" +
-                                  "    \"instance_name\": \"movies-mysql\",\n" +
+                                  "    \"instance_name\": blobstore,\n" +
                                   "    \"label\": \"cleardb\",\n" +
-                                  "    \"name\": \"movies-mysql\",\n" +
+                                  "    \"name\": blobstore,\n" +
                                   "    \"plan\": \"spark\",\n" +
                                   "    \"provider\": null,\n" +
                                   "    \"syslog_drain_url\": null,\n" +
